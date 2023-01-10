@@ -16,3 +16,10 @@ newParagraph.textContent = 'I have been inserted';
 let existingBody = document.querySelector('body');
 
 existingBody.append(newSection, newParagraph);
+
+//removing an element.
+newSection.remove();
+
+console.log(newParagraph.parentElement.removeChild(newParagraph)); //for older browsers seems to be taking alot of time.
+
+
