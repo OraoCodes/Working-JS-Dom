@@ -20,6 +20,11 @@ existingBody.append(newSection, newParagraph);
 //removing an element.
 newSection.remove();
 
-console.log(newParagraph.parentElement.removeChild(newParagraph)); //for older browsers seems to be taking alot of time.
+newParagraph.parentElement.removeChild(newParagraph); //for older browsers seems to be taking alot of time.
 
+//Accessing the innerHTML - JS-HTML
 
+let paragraphElement = document.querySelector('p')
+console.log(paragraphElement.innerHTML);
+
+paragraphElement.innerHTML = 'Hi <strong>I am here to stay </strong>';
