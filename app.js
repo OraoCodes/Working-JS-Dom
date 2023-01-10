@@ -28,3 +28,9 @@ let paragraphElement = document.querySelector('p')
 console.log(paragraphElement.innerHTML);
 
 paragraphElement.innerHTML = 'Hi <strong>I am here to stay </strong>';
+
+//Event Listeners
+function textManipulation(){
+    paragraphElement.textContent = 'I am hovered';
+}
+paragraphElement.addEventListener('click', textManipulation);
