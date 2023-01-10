@@ -34,3 +34,13 @@ function textManipulation(){
     paragraphElement.textContent = 'I am hovered';
 }
 paragraphElement.addEventListener('click', textManipulation);
+
+        //Input event listening.
+let inputElement = document.querySelector('input');
+
+function listenToUserInput(){
+    let enteredText = inputElement.value;
+    console.log(enteredText);
+}
+
+inputElement.addEventListener('input', listenToUserInput)
