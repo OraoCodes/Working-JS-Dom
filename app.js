@@ -88,3 +88,12 @@ function retrieveUserInput(){
 }
 
 inputElement.addEventListener('input', retrieveUserInput);
+
+//'event -property'
+//rewrite the input function
+
+function getUserDataDetails(event){
+  let  enteredData = event.target.value;
+  console.log(enteredData);
+}
+inputElement.addEventListener('input', getUserDataDetails);
